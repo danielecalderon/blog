@@ -30,7 +30,9 @@ class PagesController < ApplicationController
     
     def destroy
       @page = Page.find(params[:id])
-      @page.destroy(page_params) 
+      @page.destroy
+      redirect_to pages_path
+      
     end
     
     private
