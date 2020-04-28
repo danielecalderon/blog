@@ -1,9 +1,27 @@
 <h1>Blog Pages</h1>
 
-<!--<%= @pages.frist.title %>-->
+<!--<%= @pages %> -->
 
-<% grade = 97 %>
-<% if grade > 60 %>
-    You Passed!
+<!--<% grade = 97 %>-->
+<!--<% if grade > 60 %>-->
+<!--    You Passed!-->
+<!--<% end %>-->
+
+<!--<% 4.times do |index| %>-->
+<!--    <p><%= index %> fish</p>-->
+<!--<% end %>-->
+
+<!--<% @pages.each do |page| %>-->
+<!--    <p><%= page.title %></p>-->
+<!--<% end %>-->
+
+<!--<% @pages.each do |page| %>-->
+<!--    <p><%= page.title %></p>-->
+<!--<% end %>-->
+
+<% @pages.each do |page| %>
+    <p><%= link_to page.title, page %></p>
 <% end %>
+
+<%= link_to 'New Page', new_page_path %>
 
